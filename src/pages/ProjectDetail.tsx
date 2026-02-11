@@ -105,27 +105,31 @@ export default function ProjectDetail() {
             </p>
           </div>
 
-          {/* Technical Details */}
-          <div className="grid md:grid-cols-2 gap-6 pt-4">
-            {project.camera && (
-              <div className="space-y-2">
-                <div className="flex items-center gap-2 text-sm font-light tracking-wide uppercase text-muted-foreground">
-                  <Camera className="size-4" />
-                  <span>Camera</span>
-                </div>
-                <p className="font-light text-foreground">{project.camera}</p>
-              </div>
-            )}
-            {project.client && (
-              <div className="space-y-2">
-                <div className="flex items-center gap-2 text-sm font-light tracking-wide uppercase text-muted-foreground">
-                  <User className="size-4" />
-                  <span>Client</span>
-                </div>
-                <p className="font-light text-foreground">{project.client}</p>
-              </div>
-            )}
+          {/* Tech Stack */}
+          <div className="space-y-2">
+            <div className="flex items-center gap-2 text-sm font-light tracking-wide uppercase text-muted-foreground">
+              <Camera className="size-4" />
+              <span>Tech Stack</span>
+            </div>
+            <p className="font-light text-foreground">{project.techStack}</p>
           </div>
+
+          {/* Project Details */}
+          {project.details && project.details.length > 0 && (
+            <div className="space-y-3">
+              <div className="flex items-center gap-2 text-sm font-light tracking-wide uppercase text-muted-foreground">
+                <User className="size-4" />
+                <span>Key Highlights</span>
+              </div>
+              <ul className="space-y-2 pl-4">
+                {project.details.map((detail, i) => (
+                  <li key={i} className="font-light text-foreground list-disc">
+                    {detail}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </motion.div>
       </section>
 
