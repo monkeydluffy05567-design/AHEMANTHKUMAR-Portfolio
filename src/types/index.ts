@@ -1,9 +1,8 @@
 /**
- * Core TypeScript interfaces for Frame Portfolio
- * Based on SPECIFICATION.md data model requirements
+ * Core TypeScript interfaces for Portfolio
  */
 
-export type ProjectCategory = 'portraits' | 'landscapes' | 'editorial' | 'architecture' | 'documentary';
+export type ProjectCategory = 'excel' | 'python' | 'sql' | 'multi-tool';
 
 export type AspectRatio = 'portrait' | 'landscape' | 'square';
 
@@ -23,6 +22,8 @@ export interface Project {
   coverImage: string;
   images: ProjectImage[];
   description: string;
+  techStack: string;
+  details: string[];
   client?: string;
   camera?: string;
   location?: string;
@@ -46,6 +47,7 @@ export interface PhotographerInfo {
     instagram?: string;
     linkedin?: string;
     behance?: string;
+    github?: string;
   };
   portraitImage: string;
 }

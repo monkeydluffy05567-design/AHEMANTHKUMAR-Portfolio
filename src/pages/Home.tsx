@@ -98,7 +98,7 @@ export default function Home() {
             <ScrollReveal>
               <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-light tracking-wide">
-              About My Work
+              About Me
             </h2>
             <div className="space-y-4 text-lg font-light leading-relaxed text-muted-foreground">
               <p>
@@ -109,7 +109,7 @@ export default function Home() {
                   to="/about"
                   className="inline-flex items-center gap-2 text-base font-light tracking-wide text-foreground hover:text-muted-foreground transition-colors group"
                 >
-                  <span>Learn More About Me</span>
+                  <span>Learn More</span>
                   <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </div>
@@ -126,7 +126,7 @@ export default function Home() {
                 Featured Projects
               </h2>
               <p className="text-lg text-muted-foreground font-light tracking-wide">
-                A selection of recent work
+                A selection of recent data analytics work
               </p>
             </div>
           </ScrollReveal>
