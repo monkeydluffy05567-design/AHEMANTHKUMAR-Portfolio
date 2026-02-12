@@ -7,15 +7,14 @@ export const projects: Project[] = [
     category: 'multi-tool',
     year: '2024',
     slug: 'sales-operations-analysis',
-    techStack: 'Excel, SQL, Python',
+    techStack: 'Excel, SQL, Python, Power BI',
     description: 'End-to-end analytics solution analyzing transactional sales and shipment data with dashboards tracking revenue, orders, and performance trends.',
     details: [
-      'Cleaned and transformed data using Python and Excel',
-      'Queried structured datasets with SQL to analyze customer behavior and product performance',
-      'Built interactive Excel dashboards for revenue, shipments, and order status',
-      'Performed validation and exploratory analysis to support business decisions'
+      'Designed an end-to-end data analytics solution by collecting transactional sales and shipment data, cleaning and transforming it using Python (Pandas) and Excel',
+      'Stored and queried structured data using SQL to analyze sales trends, order status, customer behavior, and product performance',
+      'Built interactive Power BI dashboards with slicers and visual reports to track revenue, shipment volumes, order status, and monthly performance',
+      'Performed data validation and exploratory analysis using Pivot Tables and Excel dashboards to cross-check insights and support business decisions'
     ],
-    // Photo by Zain Creations on Unsplash
     coverImage: 'https://images.unsplash.com/photo-1733496637708-9470e9c8cfe2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjB8&ixlib=rb-4.1.0&q=80&w=1080',
     images: [
       { id: '1-1', src: 'https://images.unsplash.com/photo-1610142004358-e4e987e4c5af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjF8&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Dashboard screenshot', aspectRatio: 'landscape' },
@@ -31,9 +30,9 @@ export const projects: Project[] = [
     techStack: 'Excel',
     description: 'Retail sales dashboard identifying peak hours, revenue trends, and customer purchasing behavior.',
     details: [
-      'Used Pivot Tables and charts to analyze sales patterns',
-      'Built slicer-based interactive dashboard',
-      'Generated insights on best-selling products and store performance'
+      'Analyzed coffee shop retail sales data using Excel Pivot Tables and Pivot Charts to identify peak sales hours, high-revenue days, and monthly sales trends',
+      'Built an interactive Excel dashboard with slicers (Month, Day) to track total sales, footfall, average bill per person, and product category performance',
+      'Derived actionable insights on best-selling products, store-wise performance, and customer purchasing patterns to support business decision-making'
     ],
     coverImage: 'https://images.unsplash.com/photo-1761870033405-d1474ec5dae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjJ8&ixlib=rb-4.1.0&q=80&w=1080',
     images: [
@@ -49,9 +48,9 @@ export const projects: Project[] = [
     techStack: 'Python',
     description: 'Performed preprocessing and EDA on raw sales data to identify trends and revenue distribution.',
     details: [
-      'Handled missing values, duplicates, and incorrect types',
-      'Used aggregation and statistics for trend discovery',
-      'Produced insights on demand, revenue, and order patterns'
+      'Performed data cleaning and preprocessing on raw sales data using Python (Pandas, NumPy), handling missing values, incorrect data types, and duplicates',
+      'Conducted exploratory data analysis (EDA) using grouping, aggregation, and statistical summaries to identify sales trends, top-performing products, and monthly performance',
+      'Generated insights on revenue distribution, product demand, and order patterns using Python-based analysis'
     ],
     coverImage: 'https://images.unsplash.com/photo-1758543437543-6d61ca0fd530?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjR8&ixlib=rb-4.1.0&q=80&w=1080',
     images: [
@@ -60,6 +59,24 @@ export const projects: Project[] = [
   },
   {
     id: '4',
+    title: 'Sales & Shipment Performance Dashboard',
+    category: 'multi-tool',
+    year: '2024',
+    slug: 'sales-shipment-dashboard',
+    techStack: 'Power BI',
+    description: 'Interactive Power BI dashboards analyzing sales revenue, shipment volume, and order status across products and time periods.',
+    details: [
+      'Designed interactive Power BI dashboards to analyze sales revenue, shipment volume, and order status across products and time periods',
+      'Built data models and relationships, created DAX measures such as total sales, order count, and monthly trends',
+      'Implemented slicers and filters to enable dynamic analysis by month, product, and order status for business reporting'
+    ],
+    coverImage: 'https://images.unsplash.com/photo-1742260765447-239ed006350a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1Njh8&ixlib=rb-4.1.0&q=80&w=1080',
+    images: [
+      { id: '4-1', src: 'https://images.unsplash.com/photo-1680287327539-9467451a8b81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1Njh8&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Power BI dashboard', aspectRatio: 'landscape' },
+    ]
+  },
+  {
+    id: '5',
     title: 'Amazon SQL Data Analysis Project',
     category: 'sql',
     year: '2024',
@@ -67,91 +84,16 @@ export const projects: Project[] = [
     techStack: 'SQL',
     description: 'Designed relational database and analyzed e-commerce product sales performance.',
     details: [
-      'Created normalized tables with constraints',
-      'Performed grouped sales analysis',
-      'Used SELECT, WHERE, GROUP BY, HAVING, ORDER BY for insights'
+      'Designed and implemented an Amazon-style relational database using SQL to analyze e-commerce sales data',
+      'Analyzed product-wise and category-wise sales performance using aggregate functions',
+      'Created tables with primary keys, foreign keys, and constraints to maintain data integrity',
+      'Performed data analysis using SELECT, WHERE, GROUP BY, HAVING, ORDER BY clauses'
     ],
     coverImage: 'https://images.unsplash.com/photo-1682232568244-edbb92614c2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjZ8&ixlib=rb-4.1.0&q=80&w=1080',
     images: [
-      { id: '4-1', src: 'https://images.unsplash.com/photo-1730724620317-2b806898bdda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjZ8&ixlib=rb-4.1.0&q=80&w=1080', alt: 'SQL query results', aspectRatio: 'landscape' },
+      { id: '5-1', src: 'https://images.unsplash.com/photo-1730724620317-2b806898bdda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NjZ8&ixlib=rb-4.1.0&q=80&w=1080', alt: 'SQL query results', aspectRatio: 'landscape' },
     ]
   },
-  {
-    id: '5',
-    title: 'Customer Churn Prediction Dashboard',
-    category: 'multi-tool',
-    year: '2024',
-    slug: 'customer-churn-prediction',
-    techStack: 'Python, Excel',
-    description: 'Predictive analytics dashboard identifying at-risk customers using behavioral and transactional data patterns.',
-    details: [
-      'Performed feature engineering on customer usage and billing data using Pandas',
-      'Built churn indicator metrics and segmented customers by risk category',
-      'Designed Excel dashboard with conditional formatting to highlight churn-prone segments',
-      'Delivered actionable retention insights to reduce customer attrition'
-    ],
-    coverImage: 'https://images.unsplash.com/photo-1742260765447-239ed006350a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1Njh8&ixlib=rb-4.1.0&q=80&w=1080',
-    images: [
-      { id: '5-1', src: 'https://images.unsplash.com/photo-1680287327539-9467451a8b81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1Njh8&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Churn analysis', aspectRatio: 'landscape' },
-    ]
-  },
-  {
-    id: '6',
-    title: 'Retail Inventory Optimization Analysis',
-    category: 'multi-tool',
-    year: '2023',
-    slug: 'retail-inventory-optimization',
-    techStack: 'SQL, Excel',
-    description: 'Inventory management analysis optimizing stock levels and reducing overstock through demand pattern recognition.',
-    details: [
-      'Queried inventory and sales tables using SQL joins and aggregation functions',
-      'Identified slow-moving and fast-moving SKUs through turnover ratio analysis',
-      'Created Excel reports with reorder point calculations and safety stock recommendations',
-      'Reduced simulated overstock costs by identifying seasonal demand fluctuations'
-    ],
-    coverImage: 'https://images.unsplash.com/photo-1669908752972-e04c3b65e855?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1Njl8&ixlib=rb-4.1.0&q=80&w=1080',
-    images: [
-      { id: '6-1', src: 'https://images.unsplash.com/photo-1619508126123-3586ee993858?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NzB8&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Inventory report', aspectRatio: 'landscape' },
-    ]
-  },
-  {
-    id: '7',
-    title: 'Financial Revenue Trend Visualization',
-    category: 'python',
-    year: '2023',
-    slug: 'financial-revenue-trends',
-    techStack: 'Python, Matplotlib',
-    description: 'Time-series revenue visualization uncovering quarterly growth patterns and seasonal financial trends.',
-    details: [
-      'Loaded and cleaned multi-year revenue data using Pandas DataFrames',
-      'Created line charts, bar plots, and heatmaps using Matplotlib for trend analysis',
-      'Computed rolling averages and growth rates to identify revenue momentum',
-      'Summarized findings in a Jupyter Notebook report for stakeholder review'
-    ],
-    coverImage: 'https://images.unsplash.com/photo-1616267624976-b45d3a7bac73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NzF8&ixlib=rb-4.1.0&q=80&w=1080',
-    images: [
-      { id: '7-1', src: 'https://images.unsplash.com/photo-1616267624976-b45d3a7bac73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NzF8&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Revenue charts', aspectRatio: 'landscape' },
-    ]
-  },
-  {
-    id: '8',
-    title: 'Marketing Campaign Performance Analysis',
-    category: 'multi-tool',
-    year: '2023',
-    slug: 'marketing-campaign-analysis',
-    techStack: 'Excel, SQL',
-    description: 'Multi-channel marketing analytics evaluating campaign ROI, conversion rates, and audience engagement metrics.',
-    details: [
-      'Extracted campaign performance data using SQL queries across multiple marketing channels',
-      'Built Excel dashboards comparing CTR, conversion rates, and cost-per-acquisition',
-      'Identified top-performing campaigns and underperforming ad segments',
-      'Provided data-backed recommendations for budget reallocation and targeting optimization'
-    ],
-    coverImage: 'https://images.unsplash.com/photo-1582210413269-f0bf6d13f58f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NzN8&ixlib=rb-4.1.0&q=80&w=1080',
-    images: [
-      { id: '8-1', src: 'https://images.unsplash.com/photo-1617293134227-0ec282f3ed89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDA2OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjI3Njk1NzN8&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Campaign metrics', aspectRatio: 'landscape' },
-    ]
-  }
 ];
 
 // Helper function to get project by slug
