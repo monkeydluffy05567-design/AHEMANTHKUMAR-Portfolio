@@ -29,15 +29,15 @@ export default function Home() {
             muted
             loop
             playsInline
-            preload="metadata"
-            poster="https://images.pexels.com/videos/2675516/free-video-2675516.jpg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"
+            preload="auto"
+            poster="https://raw.githubusercontent.com/monkeydluffy05567-design/v1/main/public/videos/hero-bg.mp4"
             className="w-full h-full object-cover"
             onError={(e) => {
               const target = e.currentTarget;
               target.style.opacity = '0';
             }}
           >
-            <source src="https://videos.pexels.com/video-files/2675516/2675516-sd_960_540_24fps.mp4" type="video/mp4" />
+            <source src="https://raw.githubusercontent.com/monkeydluffy05567-design/v1/main/public/videos/hero-bg.mp4" type="video/mp4" />
           </video>
           {/* Video from Pexels */}
           {/* Gradient Overlay for text readability */}
