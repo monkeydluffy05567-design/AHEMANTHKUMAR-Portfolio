@@ -2,14 +2,14 @@ import type { PhotographerInfo } from '@/types';
 
 export const photographerInfo: PhotographerInfo = {
   name: 'Amugadda Hemanth Kumar',
-  tagline: 'Data Analyst | Python • SQL • Excel | Dashboard & EDA Specialist',
-  heroIntroduction: 'Delivering accurate insights that support data-driven business decisions through Python, SQL, and Excel.',
-  biography: `B.Tech graduate in Electrical & Electronics Engineering with strong foundations in Python, SQL, and Excel for data analytics. Skilled in data cleaning, exploratory data analysis, dashboard creation, and SQL-based reporting using Pandas, NumPy, and Matplotlib. Focused on delivering accurate insights that support data-driven business decisions and continuously improving analytical capabilities through real-world projects.
+  tagline: 'Data Analyst | Python • SQL • Excel • Power BI | Dashboard & EDA Specialist',
+  heroIntroduction: 'Delivering accurate insights that support data-driven decision-making through Python, SQL, Excel, and Power BI.',
+  biography: `B.Tech graduate in Electrical & Electronics Engineering, with a robust foundation in Python, SQL, and Excel. Proficient in data cleaning, exploratory data analysis, dashboard creation, and SQL-based reporting using industry-standard libraries such as Pandas, NumPy, and Matplotlib. Reflecting a commitment to continuous learning. Possess a strong analytical mindset, attention to detail, and a passion for uncovering insights that support data-driven decision-making. Eager to contribute to real-world analytics projects and continuously grow in the field of data science.
 
-Programming: Python (Pandas, NumPy, Matplotlib), SQL (MySQL). Data Analysis: Data Cleaning, EDA, Data Visualization. Reporting & Tools: Excel Dashboards, Pivot Tables, Jupyter Notebook. Other Tools: Git, GitHub (Basic).`,
-  approach: `Professional Strengths: Application development using Pega PRPC, debugging, performance improvement, teamwork, communication.
+Programming: Python (Pandas, NumPy, Matplotlib), SQL (MySQL), Power BI. Data Analysis: Data Cleaning, EDA, Data Visualization. Reporting & Tools: Excel Dashboards, Pivot Tables, Jupyter Notebook. Other Tools: Git, GitHub (Basic).`,
+  approach: `Professional Strengths: Adept at designing and developing applications using Pega PRPC. Strong skills in debugging and performance enhancement. Collaborative team player with excellent communication abilities.
 
-Soft Skills: Analytical Thinking, Problem-Solving, Attention to Detail, Time Management, Adaptability.
+Soft Skills: Analytical Thinking, Communication, Problem-Solving, Attention to Detail, Teamwork, Time Management, Adaptability.
 
 Certification: Pega Certified System Architect (CSA) — Completed official Pega training with hands-on project experience.`,
   awards: [
@@ -19,6 +19,7 @@ Certification: Pega Certified System Architect (CSA) — Completed official Pega
     'Python',
     'SQL',
     'Excel',
+    'Power BI',
     'Pandas',
     'NumPy',
     'Matplotlib',
