@@ -30,16 +30,21 @@ export default function Home() {
             loop
             playsInline
             preload="auto"
-            poster="https://raw.githubusercontent.com/monkeydluffy05567-design/v1/main/public/videos/hero-bg.mp4"
-            className="w-full h-full object-cover"
+            poster="https://res.cloudinary.com/ddm18bqdi/video/upload/so_0/v1770869210/12637575_1920_1080_30fps_uvssru.jpg"
+            className="w-full h-full object-cover motion-reduce:hidden"
             onError={(e) => {
               const target = e.currentTarget;
               target.style.opacity = '0';
             }}
           >
-            <source src="https://raw.githubusercontent.com/monkeydluffy05567-design/v1/main/public/videos/hero-bg.mp4" type="video/mp4" />
+            <source src="https://res.cloudinary.com/ddm18bqdi/video/upload/v1770869210/12637575_1920_1080_30fps_uvssru.mp4" type="video/mp4" />
           </video>
-          {/* Video from Pexels */}
+          {/* Reduced-motion fallback */}
+          <img
+            src="https://res.cloudinary.com/ddm18bqdi/video/upload/so_0/v1770869210/12637575_1920_1080_30fps_uvssru.jpg"
+            alt="Hero background"
+            className="hidden motion-reduce:block w-full h-full object-cover"
+          />
           {/* Gradient Overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
         </div>
