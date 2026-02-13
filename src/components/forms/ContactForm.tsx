@@ -60,17 +60,18 @@ export function ContactForm() {
     
     try {
       // Formspree integration - replace YOUR_FORM_ID with your actual form ID
-      const response = await fetch('https://formspree.io/f/hemantjkumar7783@gmail.com', {
+      const response = await fetch('https://formsubmit.co/ajax/hemanthkumar7783@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json',
         },
         body: JSON.stringify({
           name: data.name,
           email: data.email,
-          
           message: data.message,
-          _subject: `New inquiry from ${data.name}`,
+          _subject: `New Portfolio Inquiry from ${data.name}`,
+          _template: 'table',
         }),
       });
 
@@ -194,20 +195,26 @@ export function ContactForm() {
         )}
 
         {/* Submit Button */}
-        <Button
-          type="submit"
-          className="w-full py-6 text-base font-light tracking-wide"
-          disabled={isSubmitting}
+        <motion.div
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.97 }}
+          transition={{ type: 'spring', stiffness: 400, damping: 17 }}
         >
-          {isSubmitting ? (
-            <>
-              <Loader2 className="mr-2 size-5 animate-spin" />
-              Sending...
-            </>
-          ) : (
-            'Send Message'
-          )}
-        </Button>
+          <Button
+            type="submit"
+            className="w-full py-6 text-base font-light tracking-wide transition-shadow hover:shadow-lg"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? (
+              <>
+                <Loader2 className="mr-2 size-5 animate-spin" />
+                Sending...
+              </>
+            ) : (
+              'Send Message'
+            )}
+          </Button>
+        </motion.div>
       </form>
     </Form>
   );
